@@ -14,7 +14,6 @@
 ｜- ｜- ｜- package.json
 
 ```javascript
-
 "private": true,
 "workspaces": [
     "package/*"
@@ -36,5 +35,14 @@
     * yarn global add lerna
 * 初始化
     * lerna init
+```javascript 
+    "scripts": {
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "lerna": "lerna publish"
+    },
+```
+* 查看包list
+    * lerna list
 * 发布
     * yarn lerna
